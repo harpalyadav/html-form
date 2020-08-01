@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Login form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center>
+	<div class="form11">
+		
+<form action="#" onsubmit="return myfun()">
+	
+
+
+<h2> Registration form </h2><br>
+<fieldset>
+
+<br>
+First Name:<input type="text" name="First Name" ><br><br>
+Last Name:<input type="text" name="Last Name"  ><br><br>
+Gender: <input type="radio" name="Gender">male
+<input type="radio" name="Gender">female<br><br>
+
+<label> Date of birth:</label>
+<input type="date"><br><br>
+
+Qualification:<br>
+<input type="checkbox" id= "B.Tech" value="B.Tech">
+<label for pushpedra>B.Tech </label>
+
+<input type="checkbox" id= "B.A" value="B.A">
+<label for B.A> B.A </label>
+
+<input type="checkbox" id= "BCA" value="BCA">
+<label for BCA> BCA </label>
+
+<input type="checkbox" id= "BBA" value="BBA">
+<label for BBA> BBA </label><br>
+
+<input type="checkbox" id= "MBA" value="MBA">
+<label for MBA> MBA </label>
+
+<input type="checkbox" id= "B.COM" value="B.COM">
+<label for B.COM> B.COM </label><br><br><br>
+
+Address:
+<input type="text" name="Address" ><br><br>
+City:<input type="text" name="city" ><br><br>
+District:<input type="text" name="District"><br><br>
+Postal Code:<input type="text" name="Postal"><br><br>
+
+
+Select State:
+<select name="harpal">
+<option value state> -Select- </option> <br><br>
+<option value state > Rajsthan </option> <br><br>
+<option value state> Delhi </option> <br><br>
+<option value state> Punjab </option> <br><br>
+<option value state> Kerala </option> <br><br>
+<option value state> Gujarat </option> <br><br>
+
+</select>
+<br><br><br>
+
+
+Select Resume: <input type="file">
+<br><br>
+User Name:<input type="text" id="username" value="" ><span id="msg" style="color: red"></span><br><br>
+
+User Password:<input type="Password" id="password" value=""  ><span id="msg1" style="color: red"></span><br><br>
+
+Confirm Password:<input type="Password" id="password1" value=""  ><span id="msg2" style="color: red"></span><br>
+<br>
+<input type="Submit" value="Submit">
+<input type="reset" value="Reset" onclick="return fun()">
+
+
+
+</form>
+</fieldset>
+</div>
+</center>
+
+<script>
+	function myfun(){
+	var a=document.getElementById("username").value;
+    var b=document.getElementById("password").value; 
+    var c=document.getElementById("password1").value; 
+
+if(a==""){
+	document.getElementById("msg").innerHTML="* * Please fill user name";
+	return false;
+}
+
+if(b==""){
+	document.getElementById("msg1").innerHTML="* * Please fill user password";
+	return false;
+}
+if(c==""){
+	document.getElementById("msg2").innerHTML="* * Please fill confirm password";
+	return false;
+}
+if(b!=c){
+	document.getElementById("msg2").innerHTML="* * password doesn't Match";
+	return false;
+}
+
+}
+
+</script>
+<script type="text/javascript">
+	function fun(){
+		location.reload();
+	}
+	
+</script>
+
+</body>
+</html>
+
+
+
+
+
